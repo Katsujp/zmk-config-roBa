@@ -68,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R               &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &lt_to_layer_0 5 F  &kp G   &kp ESC                            &kp TAB          &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 COLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B   &kp COLON                          &kp SEMICOLON    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE         &tog 2  &lt_to_layer_0 7 LS(CAPSLOCK)      &lt 3 BACKSPACE  &lt 1 ENTER                             &lt 6 PRINTSCREEN
+&kp Q             &kp W         &kp E         &kp R               &kp T                                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &lt_to_layer_0 5 F  &kp G                    &kp ESC                            &kp TAB          &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 COLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B                    &kp COLON                          &kp SEMICOLON    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE         &lt_to_layer_0 2 DELETE  &lt_to_layer_0 7 LS(CAPSLOCK)      &lt 3 BACKSPACE  &lt 1 ENTER                             &lt 6 PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -97,10 +97,10 @@
 
         vim {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &trans         &kp LC(TAB)     &trans                            &trans          &kp PAGE_UP     &kp HOME      &trans     &trans
-&kp END         &trans           &kp PAGE_DOWN  &msc SCRL_DOWN  &trans        &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&kp LEFT_SHIFT  &kp DEL          &kp LC(C)      &kp LC(V)       &msc SCRL_UP  &trans      &trans  &trans          &trans          &trans        &trans     &trans
-&trans          &trans           &trans         &trans          &trans        &trans      &trans  &trans                                                   &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &trans         &kp LC(TAB)    &trans                           &trans          &kp PAGE_UP     &kp HOME      &trans     &trans
+&kp END         &trans           &kp PAGE_DOWN  &kp PAGE_DOWN  &trans       &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&kp LEFT_SHIFT  &kp DEL          &kp LC(C)      &kp LC(V)      &kp PAGE_UP  &trans      &trans  &trans          &trans          &trans        &trans     &trans
+&trans          &trans           &trans         &trans         &trans       &trans      &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
