@@ -36,6 +36,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -63,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R               &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &lt_to_layer_0 5 F  &kp G        &kp ESC                            &kp TAB        &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE         &lt 2 SPACE  &lt_to_layer_0 3 LS(CAPSLOCK)      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 PRINTSCREEN
+&kp Q             &kp W         &kp E         &kp R               &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &lt_to_layer_0 5 F  &kp G   &kp ESC                            &kp TAB          &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 COLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B   &kp COLON                          &kp SEMICOLON    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE         &tog 2  &lt_to_layer_0 7 LS(CAPSLOCK)      &lt 3 BACKSPACE  &lt 1 ENTER                             &lt 6 PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -83,19 +88,19 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp N1                      &kp N2           &kp N3           &kp N4           &kp N5                                                     &kp N6            &kp N7             &kp N8          &kp N9           &kp N0
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR       &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                &kp PIPE
             >;
         };
 
         vim {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &trans         &kp LC(TAB)     &trans                            &trans          &kp PAGE_UP     &kp HOME      &trans     &trans
+&kp END         &trans           &kp PAGE_DOWN  &msc SCRL_DOWN  &trans        &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&kp LEFT_SHIFT  &kp DEL          &kp LC(C)      &kp LC(V)       &msc SCRL_UP  &trans      &trans  &trans          &trans          &trans        &trans     &trans
+&trans          &trans           &trans         &trans          &trans        &trans      &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -103,10 +108,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
@@ -125,6 +130,15 @@
 &trans  &trans        &trans        &trans        &trans  &bootloader      &bootloader  &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans           &trans       &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans           &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        MARKS {
+            bindings = <
+&kp APOS  &kp DOUBLE_QUOTES  &kp EQUAL  &trans  &trans                      &trans  &trans     &trans    &trans  &kp DOT
+&trans    &kp FSLH           &trans     &trans  &trans  &trans      &trans  &trans  &trans     &trans    &trans  &trans
+&trans    &trans             &kp COMMA  &trans  &trans  &trans      &trans  &trans  &kp MINUS  &kp APOS  &trans  &trans
+&trans    &trans             &trans     &trans  &trans  &trans      &trans  &trans                               &trans
             >;
         };
     };
