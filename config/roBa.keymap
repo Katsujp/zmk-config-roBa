@@ -150,7 +150,7 @@
         MARKS {
             bindings = <
 &kp APOS  &kp DOUBLE_QUOTES  &kp EQUAL   &trans  &kp TILDE                      &trans  &trans     &trans    &trans     &kp PERCENT
-&kp AMPS  &kp FSLH           &kp DOLLAR  &trans  &kp HASH   &trans      &trans  &trans  &trans     &trans    &kp SLASH  &trans
+&kp AMPS  &kp FSLH           &kp DOLLAR  &trans  &kp HASH   &trans      &trans  &trans  &kp ASTRK  &trans    &kp SLASH  &trans
 &trans    &kp CARET          &kp COMMA   &trans  &trans     &kp AT      &trans  &trans  &kp MINUS  &kp APOS  &trans     &trans
 &trans    &trans             &trans      &trans  &trans     &trans      &trans  &trans                                  &trans
             >;
