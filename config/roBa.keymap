@@ -112,17 +112,17 @@
 
         NUM {
             bindings = <
-&kp N1    &kp N2    &kp N3      &kp N4  &kp N5                      &kp N6    &kp N7                &kp N8                 &kp N9          &kp N0
-&kp AMPS  &kp STAR  &kp DOLLAR  &trans  &trans  &trans      &trans  &kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans    &kp EXCL  &kp CARET   &trans  &trans  &trans      &trans  &trans    &kp MINUS             &trans                 &trans          &trans
-&trans    &trans    &trans      &trans  &trans  &trans      &trans  &trans                                                                 &trans
+&kp N1  &kp N2    &kp N3      &kp N4         &kp N5                      &kp N6    &kp N7                &kp N8                 &kp N9          &kp N0
+&kp AT  &kp STAR  &kp DOLLAR  &trans         &trans  &trans      &trans  &kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &kp EXCL  &kp CARET   &kp BACKSLASH  &trans  &trans      &trans  &kp AMPS  &kp MINUS             &trans                 &trans          &trans
+&trans  &trans    &trans      &trans         &trans  &trans      &trans  &trans                                                                 &trans
             >;
         };
 
         VIM {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))  &trans         &kp LC(TAB)    &trans                           &trans          &kp PAGE_UP     &kp HOME      &trans     &trans
-&kp END         &trans           &kp PAGE_DOWN  &kp PAGE_DOWN  &trans       &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&kp END         &trans           &kp PAGE_DOWN  &kp PAGE_DOWN  &trans       &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp RIGHT_SHIFT
 &kp LEFT_SHIFT  &kp DEL          &kp LC(C)      &kp LC(V)      &kp PAGE_UP  &trans      &trans  &trans          &trans          &trans        &trans     &trans
 &trans          &trans           &trans         &trans         &trans       &trans      &trans  &trans                                                   &trans
             >;
@@ -159,10 +159,10 @@
 
         MARKS {
             bindings = <
-&kp EXCL  &kp AT     &kp HASH    &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPS   &kp STAR  &trans     &kp PERCENT
-&kp AMPS  &kp ASTRK  &kp DOLLAR  &trans      &trans       &trans      &trans  &kp MINUS  &trans     &kp AT    &kp SLASH  &trans
-&trans    &kp EXCL   &kp CARET   &trans      &trans       &trans      &trans  &trans     &kp MINUS  &trans    &trans     &trans
-&trans    &trans     &trans      &trans      &trans       &trans      &trans  &trans                                     &trans
+&trans  &trans     &trans      &trans         &kp TILDE                      &trans    &trans     &trans  &trans  &kp PERCENT
+&kp AT  &kp ASTRK  &kp DOLLAR  &trans         &trans     &trans      &trans  &kp HASH  &trans     &trans  &trans  &trans
+&trans  &kp EXCL   &kp CARET   &kp BACKSLASH  &trans     &trans      &trans  &kp AMPS  &kp MINUS  &trans  &trans  &trans
+&trans  &trans     &trans      &trans         &trans     &trans      &trans  &trans                               &trans
             >;
         };
     };
