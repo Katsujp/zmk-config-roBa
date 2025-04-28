@@ -112,10 +112,10 @@
 
         NUM {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N6  &kp N7                &kp N8                 &kp N9          &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans                &trans                 &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                               &trans
+&kp N1    &kp N2    &kp N3      &kp N4  &kp N5                      &kp N6    &kp N7                &kp N8                 &kp N9          &kp N0
+&kp AMPS  &kp STAR  &kp DOLLAR  &trans  &trans  &trans      &trans  &kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans    &kp EXCL  &kp CARET   &trans  &trans  &trans      &trans  &trans    &kp MINUS             &trans                 &trans          &trans
+&trans    &trans    &trans      &trans  &trans  &trans      &trans  &trans                                                                 &trans
             >;
         };
 
@@ -160,7 +160,7 @@
         MARKS {
             bindings = <
 &kp EXCL  &kp AT     &kp HASH    &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPS   &kp STAR  &trans     &kp PERCENT
-&kp AMPS  &kp ASTRK  &kp DOLLAR  &trans      &kp HASH     &trans      &trans  &kp MINUS  &trans     &kp AT    &kp SLASH  &trans
+&kp AMPS  &kp ASTRK  &kp DOLLAR  &trans      &trans       &trans      &trans  &kp MINUS  &trans     &kp AT    &kp SLASH  &trans
 &trans    &kp EXCL   &kp CARET   &trans      &trans       &trans      &trans  &trans     &kp MINUS  &trans    &trans     &trans
 &trans    &trans     &trans      &trans      &trans       &trans      &trans  &trans                                     &trans
             >;
