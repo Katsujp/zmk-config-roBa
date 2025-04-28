@@ -112,10 +112,10 @@
 
         NUM {
             bindings = <
-&kp N1  &kp N2    &kp N3      &kp N4         &kp N5                      &kp N6    &kp N7                &kp N8                 &kp N9          &kp N0
-&kp AT  &kp STAR  &kp DOLLAR  &trans         &trans  &trans      &trans  &kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&trans  &kp EXCL  &kp CARET   &kp BACKSLASH  &trans  &trans      &trans  &kp AMPS  &kp MINUS             &trans                 &trans          &trans
-&trans  &trans    &trans      &trans         &trans  &trans      &trans  &trans                                                                 &trans
+&kp N0  &kp N1  &kp N2  &kp N3  &trans                      &trans  &trans                &trans                 &trans          &trans
+&trans  &kp N4  &kp N5  &kp N6  &trans  &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &kp N7  &kp N8  &kp N9  &trans  &trans      &trans  &trans  &trans                &trans                 &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                               &trans
             >;
         };
 
@@ -159,10 +159,10 @@
 
         MARKS {
             bindings = <
-&trans  &trans     &trans      &trans         &kp TILDE                      &trans    &trans     &trans  &trans  &kp PERCENT
-&kp AT  &kp ASTRK  &kp DOLLAR  &trans         &trans     &trans      &trans  &kp HASH  &trans     &trans  &trans  &trans
-&trans  &kp EXCL   &kp CARET   &kp BACKSLASH  &trans     &trans      &trans  &kp AMPS  &kp MINUS  &trans  &trans  &trans
-&trans  &trans     &trans      &trans         &trans     &trans      &trans  &trans                               &trans
+&trans  &trans     &trans      &trans         &kp TILDE                      &trans    &trans                &trans                 &trans          &kp PERCENT
+&kp AT  &kp ASTRK  &kp DOLLAR  &trans         &trans     &trans      &trans  &kp HASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans  &kp EXCL   &kp CARET   &kp BACKSLASH  &trans     &trans      &trans  &kp AMPS  &kp MINUS             &trans                 &trans          &trans
+&trans  &trans     &trans      &trans         &trans     &trans      &trans  &trans                                                                 &trans
             >;
         };
     };
