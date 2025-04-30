@@ -92,10 +92,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E         &kp R        &kp T                                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F        &kp G                 &kp LS(CAPSLOCK)      &lt 6 SLASH                 &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B                 &kp CAPSLOCK          &kp B                       &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE  &lt_to_layer_0 2 DEL  &lt 7 LC(SPACE)       &lt_to_layer_0 3 BACKSPACE  &lt 1 ENTER                             &kp PRINTSCREEN
+&lt 6 Q           &kp W         &kp E         &kp R        &kp T                                                        &kp Y                   &kp U  &lt_to_layer_0 5 I  &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G      &kp LS(CAPSLOCK)      &lt 6 SLASH                 &kp H                   &kp J  &kp K               &kp L    &mt RIGHT_SHIFT ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B      &kp CAPSLOCK          &kp B                       &kp N                   &kp M  &kp COMMA           &kp DOT  &mt RIGHT_CONTROL SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE  &lt 2 DEL  &lt 7 LC(SPACE)       &lt_to_layer_0 3 BACKSPACE  &lt_to_layer_0 1 ENTER                                      &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -159,7 +159,7 @@
 
         MARKS {
             bindings = <
-&trans  &trans     &trans      &trans  &kp TILDE                          &kp BACKSLASH  &trans                &trans                 &kp PIPE        &kp PERCENT
+&trans  &trans     &kp N0      &trans  &kp TILDE                          &kp BACKSLASH  &trans                &trans                 &kp PIPE        &kp PERCENT
 &kp AT  &kp ASTRK  &kp DOLLAR  &trans  &trans         &trans      &trans  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
 &trans  &kp EXCL   &kp CARET   &trans  &kp BACKSLASH  &trans      &trans  &kp AMPS       &kp MINUS             &trans                 &trans          &trans
 &trans  &trans     &trans      &trans  &trans         &trans      &trans  &trans                                                                      &trans
