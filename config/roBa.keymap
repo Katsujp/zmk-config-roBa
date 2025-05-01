@@ -12,6 +12,8 @@
     quick-tap-ms = <300>;
 };
 
+&lt { quick-tap-ms = <300>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -103,10 +105,10 @@
 
         default_layer {
             bindings = <
-&lt 6 Q           &kp W         &kp E         &kp R        &kp T                                                       &kp Y                   &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F        &kp G      &to 0                &lt 6 LS(CAPSLOCK)          &kp H                   &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B      &kp CAPSLOCK         &kp B                       &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE  &lt 2 DEL  &lt 7 LC(SPACE)      &lt_to_layer_0 3 BACKSPACE  &lt_to_layer_0 1 ENTER                             &kp PRINTSCREEN
+&lt 6 Q           &kp W         &kp E         &kp R                   &kp T                                               &kp Y                   &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                   &kp G      &to 0                &lt 6 LS(CAPSLOCK)  &kp H                   &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B      &kp CAPSLOCK         &kp B               &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 DEL  &lt 7 LC(SPACE)      &lt 3 BACKSPACE     &lt_to_layer_0 1 ENTER                             &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -123,8 +125,8 @@
 
         NUM {
             bindings = <
-&kp N0          &kp N1  &kp N2  &kp N3  &trans                      &trans  &trans                &trans                 &trans          &trans
-&trans          &kp N4  &kp N5  &kp N6  &trans  &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&trans          &kp N1  &kp N2  &kp N3  &trans                      &kp N6  &kp N7                &kp N8                 &kp N9          &kp NUMBER_0
+&trans          &kp N4  &kp N5  &kp N6  &kp N0  &trans      &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
 &kp LEFT_SHIFT  &kp N7  &kp N8  &kp N9  &trans  &trans      &trans  &trans  &trans                &trans                 &trans          &trans
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                               &trans
             >;
