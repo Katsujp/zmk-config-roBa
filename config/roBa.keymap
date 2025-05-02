@@ -93,7 +93,17 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+
+        lt_and_continue_input: lt_and_continue_input {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_AND_CONTINUE_INPUT";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
+            flavor = "balanced";
         };
     };
 
