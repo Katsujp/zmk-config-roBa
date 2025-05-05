@@ -72,6 +72,16 @@
             bindings = <&kp LC(W)>;
             key-positions = <24 25>;
         };
+
+        select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <22 23>;
+        };
+
+        unselect_all {
+            bindings = <&kp LC(LS(A))>;
+            key-positions = <23 24>;
+        };
     };
 
     macros {
