@@ -178,19 +178,19 @@
 
         SETTINGS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans           &trans       &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-&trans  &trans  &trans  &trans  &trans  &bootloader      &bootloader  &bt BT_CLR     &bt BT_CLR_ALL  &trans         &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans                                                       &trans
+&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans         &trans         &trans         &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &bt BT_CLR_ALL
             >;
         };
 
         MARKS {
             bindings = <
-&trans          &trans     &kp N0      &trans  &kp TILDE                          &kp BACKSLASH  &trans                &trans                 &kp PIPE        &kp PERCENT
-&kp AT          &kp ASTRK  &kp DOLLAR  &trans  &trans         &trans      &trans  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp LEFT_SHIFT  &kp EXCL   &kp CARET   &trans  &kp BACKSLASH  &trans      &trans  &kp AMPS       &kp MINUS             &trans                 &trans          &trans
-&trans          &trans     &trans      &trans  &trans         &trans      &trans  &trans                                                                      &trans
+&trans          &trans     &kp EQUAL        &trans     &kp TILDE                                    &kp BACKSLASH  &kp PLUS              &trans                 &kp PIPE        &kp PERCENT
+&kp AT          &kp ASTRK  &kp DOLLAR       &trans     &trans     &trans             &trans         &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp LEFT_SHIFT  &trans     &kp EXCLAMATION  &kp CARET  &trans     &kp BACKSLASH      &kp BACKSLASH  &kp AMPS       &kp MINUS             &trans                 &trans          &trans
+&trans          &trans     &trans           &trans     &trans     &trans             &trans         &trans                                                                      &trans
             >;
         };
     };
