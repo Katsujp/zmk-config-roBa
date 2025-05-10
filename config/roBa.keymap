@@ -132,7 +132,7 @@
         FUNCTION {
             bindings = <
 &trans          &kp F1  &kp F2  &kp F3  &trans                      &kp INS  &kp DEL  &kp HOME  &kp END  &trans
-&trans          &kp F4  &kp F5  &kp F6  &trans  &trans      &trans  &trans   &kp F10  &kp F11   &kp F12  &kp RIGHT_SHIFT
+&trans          &kp F4  &kp F5  &kp F6  &trans  &none       &none   &trans   &kp F10  &kp F11   &kp F12  &kp RIGHT_SHIFT
 &kp LEFT_SHIFT  &trans  &kp F7  &kp F8  &kp F9  &trans      &trans  &trans   &trans   &trans    &trans   &trans
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &trans
             >;
@@ -142,7 +142,7 @@
             bindings = <
 &trans          &kp N1  &kp N2  &kp N3  &trans                      &trans        &kp N1  &kp N2  &kp N3  &trans
 &trans          &kp N4  &kp N5  &kp N6  &kp N0  &trans      &trans  &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &kp N7  &kp N8  &kp N9  &trans  &trans      &trans  &trans        &kp N7  &kp N8  &kp N9  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT  &trans  &kp N7  &kp N8  &kp N9  &trans      &trans  &trans        &kp N7  &kp N8  &kp N9  &kp RIGHT_CONTROL
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
