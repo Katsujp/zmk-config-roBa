@@ -121,8 +121,8 @@
         default_layer {
             bindings = <
 &kp Q       &kp W         &kp E         &kp R                   &kp T                                                                    &kp Y                   &kp U               &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D         &kp F                   &kp G            &none               &none                               &kp H                   &kp J               &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&kp LSHIFT  &kp Z         &kp X         &kp C                   &kp V            &lt 6 B             &kp B                               &kp N                   &lt_to_layer_0 5 M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH
+&kp A       &kp S         &kp D         &kp F                   &kp G            &none               &kp B                               &kp H                   &kp J               &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&kp LSHIFT  &kp Z         &kp X         &kp C                   &kp V            &kp B               &lt_to_layer_0 6 LS(LCTRL)          &kp N                   &lt_to_layer_0 5 M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH
 &kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 LC(SPACE)  &lt 7 LS(CAPS)      &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 1 ENTER                                          &mt LS(LCTRL) PRINTSCREEN
             >;
 
@@ -142,7 +142,7 @@
             bindings = <
 &trans          &kp N1  &kp N2  &kp N3  &trans                      &trans        &kp N1  &kp N2  &kp N3  &trans
 &trans          &kp N4  &kp N5  &kp N6  &kp N0  &none       &none   &kp NUMBER_0  &kp N4  &kp N5  &kp N6  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &trans  &kp N7  &kp N8  &kp N9  &trans      &trans  &trans        &kp N7  &kp N8  &kp N9  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT  &trans  &kp N7  &kp N8  &kp N9  &trans      &trans  &kp N7        &kp N8  &kp N9  &trans  &kp RIGHT_CONTROL
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
@@ -188,7 +188,7 @@
         MARKS {
             bindings = <
 &trans          &trans     &kp EQUAL        &trans     &kp TILDE                                    &kp BACKSLASH  &kp PLUS              &trans                 &kp PIPE        &kp PERCENT
-&kp AT          &kp ASTRK  &kp DOLLAR       &trans     &trans     &trans             &trans         &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp AT          &kp ASTRK  &kp DOLLAR       &trans     &trans     &trans             &kp BACKSLASH  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
 &kp LEFT_SHIFT  &trans     &kp EXCLAMATION  &kp CARET  &trans     &kp BACKSLASH      &kp BACKSLASH  &kp AMPS       &kp MINUS             &trans                 &trans          &trans
 &trans          &trans     &trans           &trans     &trans     &trans             &trans         &trans                                                                      &trans
             >;
