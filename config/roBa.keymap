@@ -126,7 +126,9 @@
 &kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 LC(SPACE)  &lt 7 LS(CAPS)      &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 1 ENTER                             &mt PRINTSCREEN RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp PG_UP PAGE_DOWN>,
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
