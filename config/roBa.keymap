@@ -120,10 +120,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W         &kp E         &kp R                   &kp T                                                                    &kp Y                   &kp U               &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D         &kp F                   &kp G            &kp CAPSLOCK        &kp B                               &kp H                   &kp J               &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&kp LSHIFT  &kp Z         &kp X         &kp C                   &kp V            &kp B               &lt_to_layer_0 6 LS(CAPSLOCK)       &kp N                   &lt_to_layer_0 5 M  &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 LC(SPACE)  &lt 7 LS(CAPS)      &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 1 ENTER                                          &mt LS(LCTRL) PRINTSCREEN
+&kp Q       &kp W         &kp E         &kp R                   &kp T                                                                    &kp Y                   &kp U  &kp I      &kp O    &kp P
+&kp A       &kp S         &kp D         &kp F                   &kp G            &kp CAPSLOCK        &kp B                               &kp H                   &kp J  &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&kp LSHIFT  &kp Z         &kp X         &kp C                   &kp V            &kp B               &lt_to_layer_0 6 LS(CAPSLOCK)       &kp N                   &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 LC(SPACE)  &lt 7 LS(CAPS)      &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 1 ENTER                             &mt PRINTSCREEN RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
