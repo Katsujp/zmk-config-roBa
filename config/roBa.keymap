@@ -121,9 +121,9 @@
         default_layer {
             bindings = <
 &kp Q       &kp W         &kp E         &kp R                   &kp T                                                                 &kp Y                   &kp U  &kp I      &kp O    &kp P
-&kp A       &kp S         &kp D         &kp F                   &kp G            &kp CAPSLOCK         &kp B                           &kp H                   &kp J  &kp K      &kp L    &mo 5
-&kp LSHIFT  &kp Z         &kp X         &kp C                   &kp V            &kp B                &lt_to_layer_0 6 LS(CAPSLOCK)   &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 BACKSPACE  &lt 7 LC(SPACE)      &lt_and_continue_input 3 SPACE  &lt_to_layer_0 1 ENTER                             &mt PRINTSCREEN RIGHT_CONTROL
+&kp A       &kp S         &kp D         &kp F                   &kp G        &kp CAPSLOCK         &kp B                               &kp H                   &kp J  &kp K      &kp L    &lt_to_layer_0 5 ENTER
+&kp LSHIFT  &kp Z         &kp X         &kp C                   &kp V        &kp B                &lt_to_layer_0 6 LS(CAPSLOCK)       &kp N                   &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 SPACE  &lt 2 SPACE  &lt 7 LC(SPACE)      &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 1 ENTER                             &mt PRINTSCREEN RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
