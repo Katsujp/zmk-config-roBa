@@ -149,10 +149,10 @@
 
         VIM {
             bindings = <
-&kp ESCAPE      &trans  &trans   &kp LC(Y)      &trans                              &trans          &kp LC(Z)       &kp HOME      &trans         &trans
-&kp END         &trans  &trans   &kp PAGE_DOWN  &trans     &none            &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &trans  &kp DEL  &kp LC(C)      &kp LC(V)  &kp PAGE_UP      &trans  &trans          &trans          &kp LS(F10)   &kp LA(SPACE)  &kp RIGHT_CONTROL
-&trans          &trans  &trans   &trans         &trans     &trans           &trans  &trans                                                       &trans
+&kp ESCAPE      &trans  &trans   &kp LC(Y)      &trans                                   &trans          &kp LC(Z)       &kp HOME      &trans         &trans
+&kp END         &trans  &trans   &kp PAGE_DOWN  &trans     &none            &kp PAGE_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &trans  &kp DEL  &kp LC(C)      &kp LC(V)  &kp PAGE_UP      &trans       &trans          &trans          &kp LS(F10)   &kp LA(SPACE)  &kp RIGHT_CONTROL
+&trans          &trans  &trans   &trans         &trans     &trans           &trans       &trans                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
