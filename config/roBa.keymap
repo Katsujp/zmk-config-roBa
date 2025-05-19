@@ -65,7 +65,7 @@
 
         ctrl+w {
             bindings = <&kp LC(W)>;
-            key-positions = <30 31>;
+            key-positions = <29 9>;
         };
 
         ctrl+w2 {
@@ -169,10 +169,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &kp ESCAPE          &kp LC(LS(TAB))  &trans    &kp LC(TAB)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT_ARROW)  &mkp MB1         &mkp MB3  &mkp MB2     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(X)           &trans           &trans    &trans       &kp LA(RIGHT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                      &trans
             >;
         };
 
