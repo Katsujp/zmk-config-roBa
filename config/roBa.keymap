@@ -82,6 +82,16 @@
             bindings = <&kp SEMI>;
             key-positions = <20 19>;
         };
+
+        left_parentheses {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <18 8>;
+        };
+
+        right_parentheses {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <18 20>;
+        };
     };
 
     macros {
