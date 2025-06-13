@@ -141,7 +141,7 @@
 
         FUNCTION {
             bindings = <
-&trans          &kp F1  &kp F2  &kp F3  &trans                      &kp INS  &kp DEL  &kp HOME  &kp END  &trans
+&kp Q           &kp F1  &kp F2  &kp F3  &trans                      &kp INS  &kp DEL  &kp HOME  &kp END  &trans
 &trans          &kp F4  &kp F5  &kp F6  &trans  &none       &none   &trans   &kp F10  &kp F11   &kp F12  &kp RIGHT_SHIFT
 &kp LEFT_SHIFT  &trans  &kp F7  &kp F8  &kp F9  &trans      &trans  &trans   &trans   &trans    &trans   &trans
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &trans
