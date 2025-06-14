@@ -173,7 +173,7 @@
 &trans          &trans  &trans  &trans  &trans                      &kp ESCAPE    &kp LC(LS(TAB))  &trans    &kp LC(TAB)  &trans
 &trans          &trans  &trans  &trans  &trans  &trans      &trans  &kp LA(LEFT)  &mkp MB1         &mkp MB3  &mkp MB2     &mo 5
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(X)     &trans           &trans    &trans       &kp LA(RIGHT_ARROW)
-&trans          &trans  &trans  &mo 4   &trans  &trans      &trans  &trans                                                &trans
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
