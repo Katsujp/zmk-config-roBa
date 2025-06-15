@@ -136,7 +136,7 @@
 &kp LCTRL             &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE  &lt 2 SPACE  &to 7                                          &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 6 ENTER                                              &mt PRINTSCREEN RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         FUNCTION {
