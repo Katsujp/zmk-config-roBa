@@ -131,21 +131,12 @@
         default_layer {
             bindings = <
 &kp Q                 &kp W         &kp E         &kp R        &kp T                                                       &kp Y                               &kp U                   &kp I      &kp O    &kp P
-&kp A                 &kp S         &kp D         &kp F        &kp G        &kp CAPSLOCK    &kp B                          &kp H                               &kp J                   &kp K      &kp L    &lt_to_layer_0 5 ENTER
-&mt LSHIFT LC(SPACE)  &kp Z         &kp X         &kp C        &kp V        &kp B           &lt_to_layer_0 6 LS(CAPSLOCK)  &kp N                               &kp M                   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL             &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 SPACE  &lt 2 SPACE  &to 7                                          &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 6 ENTER                                              &mt PRINTSCREEN RIGHT_CONTROL
+&kp A                 &kp S         &kp D         &kp F        &kp G        &kp CAPSLOCK    &kp B                          &kp H                               &kp J                   &kp K      &kp L    &lt_to_layer_0 4 ENTER
+&mt LSHIFT LC(SPACE)  &kp Z         &kp X         &kp C        &kp V        &kp B           &lt_to_layer_0 5 LS(CAPSLOCK)  &kp N                               &kp M                   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL             &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 SPACE  &lt 1 SPACE  &to 6                                          &lt_and_continue_input 2 BACKSPACE  &lt_to_layer_0 5 ENTER                                              &mt PRINTSCREEN RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
-        };
-
-        FUNCTION {
-            bindings = <
-&kp Q           &kp F1  &kp F2  &kp F3  &trans                    &kp INS  &kp DEL  &kp HOME  &kp END  &trans
-&trans          &kp F4  &kp F5  &kp F6  &trans  &none     &none   &trans   &kp F10  &kp F11   &kp F12  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &trans  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans   &trans   &trans    &trans   &trans
-&trans          &trans  &trans  &trans  &trans  &trans            &trans   &trans                                       &trans
-            >;
         };
 
         NUM {
@@ -171,7 +162,7 @@
         MOUSE {
             bindings = <
 &trans          &trans  &trans  &trans  &trans                    &kp ESCAPE    &kp LC(LS(TAB))  &trans    &kp LC(TAB)  &trans
-&trans          &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LEFT)  &mkp MB1         &mkp MB3  &mkp MB2     &mo 5
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LEFT)  &mkp MB1         &mkp MB3  &mkp MB2     &mo 4
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(X)     &trans           &trans    &trans       &kp LA(RIGHT_ARROW)
 &trans          &trans  &trans  &trans  &trans  &trans            &trans        &trans                                                       &trans
             >;
