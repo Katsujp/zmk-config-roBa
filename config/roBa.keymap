@@ -197,10 +197,10 @@
 
         MARKS {
             bindings = <
-&trans          &trans     &kp EQUAL        &trans     &kp TILDE                                  &kp BACKSLASH  &kp PLUS              &trans                 &kp PIPE        &kp PERCENT
-&kp AT          &kp ASTRK  &kp DOLLAR       &trans     &trans     &trans           &kp BACKSLASH  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
-&kp LEFT_SHIFT  &trans     &kp EXCLAMATION  &kp CARET  &trans     &kp BACKSLASH    &kp BACKSLASH  &kp AMPS       &kp MINUS             &trans                 &trans          &kp BACKSLASH
-&trans          &trans     &trans           &trans     &trans     &trans                          &trans         &trans                                                                        &trans
+&trans          &trans     &kp EQUAL        &trans     &kp TILDE                                  &kp BACKSLASH  &trans  &trans  &kp PIPE  &kp PERCENT
+&kp AT          &kp ASTRK  &kp DOLLAR       &trans     &trans     &trans           &kp BACKSLASH  &kp HASH       &trans  &trans  &trans    &trans
+&kp LEFT_SHIFT  &trans     &kp EXCLAMATION  &kp CARET  &trans     &kp BACKSLASH    &trans         &kp AMPS       &trans  &trans  &trans    &kp BACKSLASH
+&trans          &trans     &trans           &trans     &trans     &trans                          &trans         &trans                                   &trans
             >;
         };
     };
