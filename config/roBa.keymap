@@ -101,6 +101,14 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        toggle_aml: toggle_aml {
+            if (CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS != 0) {
+                CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS = 300;
+            } else {
+                CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS = 0;
+            }
+        };
     };
 
     behaviors {
