@@ -6,6 +6,7 @@
 #define MOUSE 3
 #define SCROLL 4
 #define NUM 1
+#define SNIPE 7
 
 &mt { flavor = "hold-preferred"; };
 
