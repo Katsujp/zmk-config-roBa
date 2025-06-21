@@ -5,10 +5,10 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20  // default: 10
 
+#define NUM 1
 #define MOUSE 3
 #define SCROLL 4
-#define NUM 1
-#define SNIPE 7
+#define SNIPE 5
 
 &mt { flavor = "hold-preferred"; };
 
