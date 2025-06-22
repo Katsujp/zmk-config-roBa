@@ -1,8 +1,8 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 20  // default: 10
 #define NUM 1
@@ -16,16 +16,18 @@
 };
 
 / {
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+    /omit-if-no-ref/
+
+    zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <200>;
         excluded-positions = <17 18 19 20 6 8 5 29 33 22 42>;
     };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
         input-processors = <&zip_temp_layer MOUSE 10000>;
     };
 };
@@ -136,7 +138,7 @@
             bindings = <&tog_off MOUSE>;
             label = "exit_AML";
         };
-        
+
         kp_exit_AML: kp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             wait-ms = <0>;
@@ -193,8 +195,8 @@
             bindings = <
 &kp Q       &kp W         &kp E         &kp R        &kp T                                                        &kp Y                               &kp U                   &kp I      &kp O    &kp P
 &kp A       &kp S         &kp D         &kp F        &kp G        &kp CAPSLOCK     &kp B                          &kp H                               &kp J                   &kp K      &kp L    &lt_to_layer_0 4 ENTER
-&kp LSHIFT  &kp Z         &kp X         &kp C        &kp V        &lt 3 B          &lt_to_layer_0 6 LS(CAPSLOCK)  &kp N                               &kp M                   &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 SPACE  &lt 1 SPACE  &kp LC(SPACE)                                   &lt_and_continue_input 2 BACKSPACE  &lt_to_layer_0 6 ENTER                                              &mt PRINTSCREEN RIGHT_CONTROL
+&kp LSHIFT  &kp Z         &kp X         &kp C        &kp V        &lt 3 B          &lt_to_layer_0 6 LS(CAPSLOCK)  &kp N                               &kp M                   &kp COMMA  &kp DOT  &mt_exit_AML_on_tap RIGHT_SHIFT SLASH
+&kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 SPACE  &lt 1 SPACE  &kp LC(SPACE)                                   &lt_and_continue_input 2 BACKSPACE  &lt_to_layer_0 6 ENTER                                                             &mt PRINTSCREEN RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
