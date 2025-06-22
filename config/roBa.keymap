@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20  // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20  // default: 10, キーボードでのホイールスクロール量
 #define NUM 1
 #define MOUSE 3
 #define SCROLL 4
@@ -13,23 +13,6 @@
 &mt { flavor = "hold-preferred"; };
 &mkp_input_listener {
     input-processors = <&zip_temp_layer MOUSE 250>;
-};
-
-/ {
-    /omit-if-no-ref/
-
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <200>;
-        excluded-positions = <17 18 19 20 6 8 5 29 33 22 42>;
-    };
-
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_temp_layer MOUSE 10000>;
-    };
 };
 
 / {
