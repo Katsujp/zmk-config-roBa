@@ -1,5 +1,7 @@
 #include "roBa.dtsi"
 
+#define MOUSE 3
+
 &default_transform {
     col-offset = <6>;
 };
