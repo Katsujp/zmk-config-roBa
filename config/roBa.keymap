@@ -97,7 +97,7 @@
 
         mouse_buttons {
             bindings = <&none>;
-            key-positions = <17 18 19 20 6 8 5 29 33>;
+            key-positions = <17 18 19 20 6 8 5 29 33 22 42>;
         };
     };
 
