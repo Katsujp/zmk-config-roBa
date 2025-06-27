@@ -65,12 +65,12 @@
 
         ctrl+w {
             bindings = <&kp LC(W)>;
-            key-positions = <30 31>;
+            key-positions = <30 32>;
         };
 
         ctrl+w2 {
             bindings = <&kp LC(W)>;
-            key-positions = <25 26>;
+            key-positions = <26 24>;
         };
 
         select_all {
