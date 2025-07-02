@@ -12,7 +12,7 @@
 
 &mt { flavor = "hold-preferred"; };
 &mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 250>;
+    input-processors = <&zip_temp_layer MOUSE 150>;
 };
 
 / {
