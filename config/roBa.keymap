@@ -50,7 +50,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <10 11>;
+            key-positions = <13 11>;
         };
 
         left_bracket {
