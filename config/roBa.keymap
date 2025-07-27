@@ -11,9 +11,8 @@
 #define SNIPE 5
 
 &mt { flavor = "hold-preferred"; };
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 150>;
-};
+
+&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 150>; };
 
 / {
     combos {
@@ -51,7 +50,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <10 11>;
+            key-positions = <11 13>;
         };
 
         left_bracket {
